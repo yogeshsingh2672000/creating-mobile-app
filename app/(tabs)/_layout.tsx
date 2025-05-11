@@ -5,12 +5,32 @@ import { Image, StyleSheet } from "react-native";
 
 const _layout = () => {
   return (
-    <Tabs>
+    <Tabs initialRouteName="index">
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: "Profile",
+          tabBarIcon: () => (
+            <Image className="size-6" source={images.profile} />
+          ),
+          //   headerShown: false,
+        }}
+      />
       <Tabs.Screen
         name="index"
         options={{
           title: "Dashboard",
-          tabBarIcon: () => <Image className="size-6" source={images.camera} />,
+          tabBarIcon: () => <Image className="size-6" source={images.home} />,
+          //   headerShown: false,
+        }}
+      />
+      <Tabs.Screen
+        name="history"
+        options={{
+          title: "History",
+          tabBarIcon: () => (
+            <Image className="size-6" source={images.history} />
+          ),
           //   headerShown: false,
         }}
       />
