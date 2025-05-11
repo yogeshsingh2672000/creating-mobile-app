@@ -3,7 +3,7 @@ import { Alert, Button, Text, View } from "react-native";
 
 export default function History() {
   const handlePress = () => {
-    Alert.alert("Dashboard", "You clicked the button!");
+    Alert.alert("History", "You clicked the button!");
   };
 
   return (

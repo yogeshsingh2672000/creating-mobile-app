@@ -3,7 +3,7 @@ import { Alert, Button, Text, View } from "react-native";
 
 export default function Profile() {
   const handlePress = () => {
-    Alert.alert("Dashboard", "You clicked the button!");
+    Alert.alert("Profile", "You clicked the button!");
   };
 
   return (
